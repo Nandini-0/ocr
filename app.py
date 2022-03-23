@@ -6,7 +6,7 @@ from PIL import Image
 import cv2
 import easyocr
 from easyocr import Reader
-import numpy as np
+#import numpy as np
 import pickle
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
