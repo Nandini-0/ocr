@@ -1,2 +1,1 @@
 easyocr
-opencv==4.5.5.64
