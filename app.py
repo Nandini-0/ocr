@@ -1,13 +1,10 @@
 from flask import Flask,render_template,request
-from logging import FileHandler,WARNING
 import urllib.request
 import os
 from PIL import Image
 import cv2
 import easyocr
 from easyocr import Reader
-#import numpy as np
-import pickle
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
@@ -42,8 +39,6 @@ All_categories = ['Tshirt','Shirt','Dress','Jacket','Tops','Undershirt','Pullove
                     'Ties','Wardrobe','Trolley','Drawer','Cabinet','Table','Hanger','Chair','Stool','Sofa']
 
 app = Flask(__name__,template_folder="template")
-file_handler = FileHandler('errorlog.txt')
-file_handler.setLevel(WARNING)
 
 def extract_label(img):
     lst = []
