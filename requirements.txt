@@ -1,3 +1,2 @@
 easyocr
-flask
-
+opencv
